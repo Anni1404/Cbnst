@@ -1,0 +1,12 @@
+1.start
+2.define function f(x)
+3.choose initial cases x0 And x1 such that f(x0)*f(x1)<0
+4.choose pre specified tolerable error 'e'
+5.calculate new approximated root x2=x0+x1/2;
+6.calculte f(x0)*f(x2)
+	6 a. f(x0).f(x1)<0 x0=x0 && x1=x2;
+	6 b. f(x0).f(x1)>0 x0=x2 && x1=x1
+	6 c. f(x0).f(x1)=0 root == x0;
+7.if|f(x2)| >e then goto 5 else goto 8
+8.display x2 as root.
+9.stop
